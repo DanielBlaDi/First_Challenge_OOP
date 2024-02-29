@@ -147,9 +147,9 @@ if __name__ == "__main__": # Function main, the starting point of the code
 This point said to me that I have to do a function that receives a list of words (`x`) and returns it in the same ordered with the words that are anagrams (`list2`),
 an anagram is a word that, depending on the ways you order the characters, makes a different world; knowing this, I made a code that makes 
 a set of the worlds in the list (`sets_first, sets_second`), then count how many times each one (`set(word)`) appears (`list1`), and if it is greater than one, it will be an anagram; you 
-would think, why using the count of each set and greater than one gives me the answer? It's for two reasons:
-### 1: The sets don't count how many times a character appears, only if it appears or not.
-### 2: If there are two words with the same set of characters, it indicates that these words are anagrams, because with the characters of one, you could do the other.
+would think, why using the count of each set and greater than one gives me the answer? It's for two reasons:                         
+1. The sets don't count how many times a character appears, only if it appears or not.                                    
+2. If there are two words with the same set of characters, it indicates that these words are anagrams, because with the characters of one, you could do the other.
 
 ```python
 def anagram(x: list)-> list:
